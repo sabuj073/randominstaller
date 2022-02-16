@@ -1,0 +1,33 @@
+<!-- ( SUBSCRIBE PAGE ) -->
+<div class="page" id="subscribe">
+	<div class="container align-center">
+		
+		<!-- TITEL -->
+		<div class="row title-wrapper">
+			<div class="col-md-12 title">
+				<h1 class="hd">Subscribe</h1>
+				<span class="separator"><span></span></span>
+				<p>Lorem ipsum dolor sit amet consectetur. Donec odio nisl convallis sed cursus non pharetraet</p>
+			</div>
+		</div>
+
+		<!-- SUBSCRIBE-FORM -->
+		<div class="subscription">
+			<form id="notifyMe" class="subscription-form clear form-field-wrapper" method="POST" action="http://www.ncodeart.com/themeforest/zest_under-construction_template/Layout-4/Dark/Version-4/notify-me.php">
+				<input type="email" class="form-control" name="email" placeholder="Enter your email">
+				<button type="submit" class="btn btn-color" id="submit">
+					Submit
+				</button>
+			</form>
+		</div>
+
+	</div>
+</div><!-- ( SUBSCRIBE PAGE END ) -->
+
+<script>
+	$("#notifyMe #submit").on( "click", function() {
+		 "use strict";
+	    $("#notifyMe").notifyMe();
+	    $("#notifyMe .error-text").delay(2000).fadeOut(2000);
+	});	
+</script>
